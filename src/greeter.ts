@@ -1,7 +1,6 @@
-function greeter(person: String) {
-  return "Hello, " + person;
+function greeter(person: string): string {
+  return `Hello, ${person}!`;
 }
- 
-let user = "Jane User";
- 
-document.body.textContent = greeter(user);
+
+const user = "Jane User";
+console.log(greeter(user));

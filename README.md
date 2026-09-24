@@ -1,52 +1,34 @@
-# ts-sample
+# TypeScript Starter
+
+A clean and modern TypeScript starter project.
+
+## Requirements
+
+- Node.js 18+
+- npm or yarn / pnpm
+
 ## Installation
-```
-$ npm install -g typescript
-```
-Or
-```
-$ npm install typescript --save-dev
-```
-> added 1 package in 14s
 
-```
-$ npx tsc
-```
-> Version 5.0.4\
-```
-$ tsc: The TypeScript Compiler - Version 5.0.4\
+```bash
+npm install
 ```
 
-## Configure the Compiler
+## Scripts
+
+| Command         | Description                  |
+|-----------------|------------------------------|
+| `npm run build` | Compile TypeScript to `build/` |
+| `npm run watch` | Watch mode (recompile on change) |
+| `npm start`     | Run the compiled output      |
+
+## Project Structure
+
 ```
-$ npx tsc --init
+src/           # TypeScript source files
+build/         # Compiled JavaScript (gitignored)
+tsconfig.json  # TypeScript configuration
 ```
-Edit file `tsconfig.json` and then add these line:
-```json
-{
-  "include": ["src"],
-  "compilerOptions": {
-    "outDir": "./build"
-  }
-}
-```
-Edit file `package.json` and add line:
-```json
-{
-  ...  
-  "scripts": {
-    "build": "npx tsc",
-    "watch": "npx tsc -w -p ."
-  },
-  ...
-}  
-```
-Run compiler:
-```
-$ npm run build 
-```
-or
-```
-$ npm run watch 
-```
-## Enjoy your coding!
+
+## License
+
+MIT

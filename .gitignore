@@ -1,5 +1,7 @@
-# Folders
-/node_modules/*
-
-# Files
+node_modules/
+build/
 .env
+*.log
+.DS_Store
+yarn.lock
+package-lock.json
